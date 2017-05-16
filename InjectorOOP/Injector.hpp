@@ -30,7 +30,7 @@ namespace InjectionFramework
 		bool inject( );
 		void setup( );
 
-	public:
+	private:
 		bool isProcessActive( );
 
 	private:
