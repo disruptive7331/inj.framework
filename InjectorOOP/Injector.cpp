@@ -72,7 +72,7 @@ namespace InjectionFramework
 			return false;
 
 
-		this->m_injectionThread = CreateRemoteThread( this->m_processHandle, nullptr, 0, reinterpret_cast< LPTHREAD_START_ROUTINE >( &LoadLibraryA ), nullptr, 0, nullptr );
+		this->m_injectionThread = CreateRemoteThread( this->m_processHandle, nullptr, 0, reinterpret_cast< LPTHREAD_START_ROUTINE >( &LoadLibraryA ), this->m_pszDllPath, 0, nullptr );
 
 		if ( !this->m_injectionThread )
 			return false;
