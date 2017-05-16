@@ -28,10 +28,10 @@ namespace InjectionFramework
 		void setPid( const uint16_t pid );
 		void setDllName( const std::string& dllName );
 		bool inject( );
-		void setup( );
 
 	private:
 		bool isProcessActive( );
+		void setup( );
 
 	private:
 		uint16_t m_pid;
